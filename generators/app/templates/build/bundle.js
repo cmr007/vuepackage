@@ -44,11 +44,25 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
 	__webpack_require__(1);
-	var Vue = __webpack_require__(5)
-	var app = __webpack_require__(7);
-	Vue.config.debug = true;//开启错误提示
-	new Vue(app);
+
+	var _vue = __webpack_require__(5);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	var _app = __webpack_require__(7);
+
+	var _app2 = _interopRequireDefault(_app);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	new _vue2.default(_app2.default); /*require('./styles/style.css')
+	                                  var Vue = require("vue")
+	                                  var app = require('./components/app.vue')
+	                                  Vue.config.debug = true;//开启错误提示
+	                                  new Vue(app);*/
 
 /***/ },
 /* 1 */
@@ -6129,7 +6143,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "f:\\mygit\\generator-vuepackage\\generators\\app\\templates\\src\\components\\app.vue"
+	__vue_options__.__file = "F:\\mygit\\generator-vuepackage\\generators\\app\\templates\\src\\components\\app.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -6140,9 +6154,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-81f8bbea", __vue_options__)
+	    hotAPI.createRecord("data-v-b5985c2a", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-81f8bbea", __vue_options__)
+	    hotAPI.reload("data-v-b5985c2a", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] app.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -6154,6 +6168,8 @@
 /* 8 */
 /***/ function(module, exports) {
 
+	"use strict";
+
 	//
 	//
 	//
@@ -6164,14 +6180,13 @@
 	//
 
 	module.exports = {
-	  el:"#app",
-	  data: function(){
+	  el: "#app",
+	  data: function data() {
 	    return {
-	      content:"电影订座，就上卖座"
-	    }
+	      content: "电影订座，就上卖座"
+	    };
 	  }
-	}	
-
+	};
 
 /***/ },
 /* 9 */
@@ -6192,7 +6207,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-81f8bbea", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-b5985c2a", module.exports)
 	  }
 	}
 
