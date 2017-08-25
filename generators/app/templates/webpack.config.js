@@ -11,15 +11,15 @@ module.exports = {
   },
   module: {
     loaders: [
-      {  
-        test: /\.js$/,  
-        exclude: /node_modules/,  
-        loader: 'babel-loader'  
-      },
       {
-        test: /\.vue?$/,
+        test: /\.vue$/,
         exclude: /node_modules/,
         loader: 'vue',
+      },
+      {  
+        test: /\.js$/,
+        exclude: /node_modules/,  
+        loader: 'babel'  
       },
       //html模板编译
       { 
@@ -31,6 +31,9 @@ module.exports = {
         loader: ExtractTextPlugin.extract("style", "css!postcss")
       }
     ]
+  },
+  resolve: {
+    extensions: ['', '.js', '.vue'],
   },
   postcss: [
     require('autoprefixer')    //调用autoprefixer插件,css3自动补全
