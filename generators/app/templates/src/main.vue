@@ -1,8 +1,11 @@
 <style scoped>
   .child-view {
-  position: absolute;
-  width:100%;
-  transition: all .2s ease-in;
+    position: absolute;
+    width:100%;
+    transition: all .2s ease-in;
+    max-width: 480px;
+    min-width: 320px;
+    min-height: 100%;
   }
   .slide-left-enter, .slide-right-leave-active {
     opacity: 0;
@@ -14,12 +17,6 @@
     -webkit-transform: translate(-50px, 0);
     transform: translate(-50px, 0);
   }
-/*   .header {
-  position:absolute;
-  height:44px;
-  background:#0058f1;
-  width:100%
-} */
 </style>
 <template>
   <transition :name="transitionName">

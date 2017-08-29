@@ -29,6 +29,10 @@ module.exports = {
       { 
         test: /\.css$/,
         loader: ExtractTextPlugin.extract("style", "css!postcss")
+      },
+      {
+        test: /\.(png|jpg|gif|jpeg|otf|eot|svg|ttf|woff|woff2)(\?\S+)?$/,
+        loader: "file?name=asset/[hash].[ext]",
       }
     ]
   },

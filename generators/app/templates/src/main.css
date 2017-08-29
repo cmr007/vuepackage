@@ -1,20 +1,12 @@
-body {
-	background-color:#3678C9;
-	color: #ffffff; 
+html,body {
+  color: #3678C9;
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 480px;
+
 }
-/* .mainMsg {
-  display: table;
-  width: 100%;
-  height: 100%;
+body a {
+	text-decoration: none;
 }
-.mainMsg .msg {
-	display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-.mainMsg .msg .contentMsg {
-	font-size: 1.5rem;
-}
-.mainMsg .msg .contentFirst {
-	font-size: 1.5rem;
-} */
+
