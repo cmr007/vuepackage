@@ -1,7 +1,7 @@
 <style scoped>
 .main-msg .msg .content-header{
-  font-size: 1.7rem;
-  margin-left: 1rem;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
 }
 .main-msg .msg .content-msg{
   width: 100%;
@@ -12,13 +12,14 @@
   right: 0.5rem;
 }
 .main-msg .msg .logo img {
-  width: 4.5rem;
+  width: 2.5rem;
 }
 .main-msg .msg .detail {
   color: #ccc;
-  margin-top: 5rem;
+  margin-top: 2rem;
   text-align: right;
   margin-right: 1rem;
+  font-size: 0.5rem;
 }
 .main-msg .msg .detail a{
   color: #A9A9A9;
@@ -29,20 +30,20 @@
 </style>
 <template>
 <div class = "main-msg">
-    <div class = "msg">
-      <div class="content-header">Where</div>
-      <div class="content-header">do you want </div>
-      <div class="content-header">to live ?</div>
-      <div class="detail">
-      <router-link :to="'list'">see all ></router-link>
-      </div>
-      <div class="content-msg">
-        <img src="./image/hotel.png"/>
-      </div>
-      <div class="logo">
-        <img src="./image/logo-1.png" alt="">
-      </div>
+  <div class = "msg">
+    <div class="content-header">Where</div>
+    <div class="content-header">do you want </div>
+    <div class="content-header">to live ?</div>
+    <div class="detail">
+    <router-link :to="'list'">see all ></router-link>
     </div>
+    <div class="content-msg">
+      <img src="./image/hotel.png"/>
+    </div>
+    <div class="logo">
+      <img src="./image/logo-1.png" alt="">
+    </div>
+  </div>
 </div>
 </template>
 <script>

@@ -5,19 +5,19 @@
     color: #000;
 	}
 	.detail header {
-		height: 50px;
+		height: 1.33rem;
     margin-bottom: 4.5%;
     padding-left: 5%;
-    line-height: 50px;
+    line-height: 1.33rem;
     padding-right: 5%;
 	}
 	.detail header .icon-left {
 		float: left;
-		font-size: 1.3rem
+		font-size: 0.6rem
 	}
 	.detail header .icon-right {
 		float: right;
-		font-size: 1.3rem
+		font-size: 0.6rem
 	}
 	.detail .img-list {
 		width: 100%;
@@ -31,30 +31,30 @@
 	}
 	.detail .img-list ul li {
   	background: #fff;
-    height: 150px;
-    box-shadow: 0 4px 4px #CED2E8;
-    border-radius: 3px;
+    height: 4.0rem;
+    box-shadow: 0 0.106667rem 0.106667rem #CED2E8;
+    border-radius: 0.08rem;
     display: table;
     width: 90%;
     margin: 1.5% auto;
   }
   .detail .img-list ul li > div {
     width: 50%;
-    height: 150px;
+    height: 4.0rem;
  		display: table-cell;
   }
   .detail .img-list ul li > div span {
   	display: block;
   }
   .detail .img-list ul li > div .hotel-name {
-  	margin-top: 45px;
-    margin-left: 10px;
-    font-size: 14px;
+  	margin-top: 1.2rem;
+    margin-left: 0.266667rem;
+    font-size: 0.373333rem;
   }
   .detail .img-list ul li > div .distance {
-  	font-size: 12px;
-    margin-top: 10px;
-    margin-left: 10px;
+  	font-size: 0.32rem;
+    margin-top: 0.266667rem;
+    margin-left: 0.266667rem;
     color: #ccc;
   }
   .detail .img-list ul li .content-right {
@@ -63,8 +63,8 @@
     text-align: right;
   }
   .detail .img-list ul li .content-right img {
-  	width: 120px;
-  	height: 120px;
+  	width: 3.2rem;
+  	height: 3.2rem;
   }
 </style>
 <template>
